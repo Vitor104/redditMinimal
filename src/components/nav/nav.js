@@ -1,7 +1,5 @@
-import React, {useState} from "react";
+import React from "react";
 import styles from './nav.module.css';
-import { NavLink } from "react-router-dom";
-import listImg from './list.svg';
 import redditImg from './reddit.svg';
 
 
