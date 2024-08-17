@@ -5,8 +5,44 @@
 }
 
 .navContainer {
-    height: 5em;
+    height: 7em;
     width: 100%;
-    background-color: #EBD000;
+    background-color: hsl(53, 100%, 46%);
     color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.nameAndLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.logo {
+    height: 2em;
+    width: 2em;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.inputSearch {
+    width: 8em;
+    border: none;
+    border-radius: 10px;
+}
+
+.button {
+    width: 4em;
+    border-radius: 10px;
+    border: none;
 }

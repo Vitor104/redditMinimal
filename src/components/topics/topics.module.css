@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.topicsContainer {
+    height: 10em;
+    width: 2em;
+    background-color: hsl(53, 100%, 46%);
+    color: black;
+    position: absolute;
+    top: 11em;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    width: 2em;
+}
+
+.arrowButton {
+    height: 3em;
+}
