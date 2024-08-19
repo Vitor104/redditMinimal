@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import styles from './topics.module.css';
-import Arrow from './arrow-left-circle.svg';
+import Arrowleft from './arrow-left-circle.svg';
+import Arrowright from './arrow-right-circle.svg';
 
 function Topics () {
 
@@ -10,8 +11,34 @@ function Topics () {
         setShowTopic(!showTopic);
     }
     return (
-        <div className={styles.topicsContainer}>
+       <main className={styles.main}>
+            <div className={styles.topicsContainer}>
+            <button onClick={toggleTopics} className={styles.button}>
+                    <img className={styles.arrowButton} src={Arrowleft} alt="show up topics"></img>
+                </button>
                 
+            </div>
+
+            {showTopic ?
+                        <div className={styles.topics}>
+                            <header className={styles.header}>
+                                <button onClick={toggleTopics} className={styles.button}>
+                                    <img className={styles.arrowButton} src={Arrowright} alt="close the tab"></img>
+                                </button>                                
+                            </header>
+                        </div>
+                         :
+                         <></>
+                            }
+        </main>
+    )
+}
+
+
+export default Topics;
+
+/*
+    
                 <button onClick={toggleTopics} className={styles.button}>
                     <img className={styles.arrowButton} src={Arrow} alt="show up topics"></img>
                 </button>
@@ -25,10 +52,9 @@ function Topics () {
                          <></>
                             }
 
-                
-        </div>
-    )
-}
 
 
-export default Topics;
+
+
+
+*/

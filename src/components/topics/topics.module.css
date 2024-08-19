@@ -10,7 +10,7 @@
     width: 2em;
     background-color: hsl(53, 100%, 46%);
     color: black;
-    position: absolute;
+    position: fixed;
     top: 11em;
     right: 0;
     display: flex;
@@ -31,8 +31,19 @@
 }
 
 .topics {
-    height: 10em;
+    height: 25em;
     width: 10em;
-    background-color: aqua;
-    
+    background-color: hsl(53, 100%, 46%);
+    position: fixed;
+    top: 11em;
+    right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.header {
+    height: 4em;
+    border-bottom: 5px solid white;
+    display: flex;
+
 }
