@@ -18,3 +18,15 @@
     top: 10em;
 }
 
+@media only screen and (min-width: 1024px) {
+    .homeContainer {
+        height: 70em;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .homeContainer {
+        width: 50%;
+        margin: 0 auto;
+    }
+}

@@ -46,4 +46,34 @@
     width: 4em;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+    .inputSearch {
+        width: 10em;
+        height: 1.5em;
+    }
+
+    .button {
+        width: 5em;
+        height: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .navContainer {
+        width: 50%;
+        margin: 0 auto;
+        height: 9em;
+    }
+
+    .nameAndLogo,
+    .inputSearch, 
+    .button
+    {
+        font-size: 20px;
+    }
+
+    
 }
