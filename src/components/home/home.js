@@ -9,16 +9,7 @@ function Home () {
     return (
         <div className={styles.homeContainer}>
             <Nav />
-            <div className={styles.contents}>
-                <ul>
-                {subreddits.map((subreddit) => (
-          <li
-            key={subreddit.id}
-          >
-            </li>
-                )}
-                </ul>
-            </div>
+            
             <Topics />
         </div>  
     )
