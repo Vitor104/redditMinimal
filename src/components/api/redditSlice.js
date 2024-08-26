@@ -6,9 +6,12 @@ export const fetchReddit = createAsyncThunk(
     async (subreddit) => {
         const response = await fetch(`https://www.reddit.com/r/${subreddit}.json`);
         const data = await response.json();
-        return data.data.children; // Returning the children array which contains the posts
+       return  data.data.children; // Returning the children array which contains the posts
+        
     }
 );
+
+
 
 // Create a slice
 const redditSlice = createSlice({

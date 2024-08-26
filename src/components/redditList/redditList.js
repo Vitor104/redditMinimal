@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import styles from './redditList.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchReddit } from '../api/redditSlice';
 
@@ -7,7 +8,7 @@ const RedditList = () => {
     const { data, loading, error } = useSelector((state) => state.reddit);
 
     useEffect(() => {
-        dispatch(fetchReddit('soccer')); // Replace 'javascript' with any subreddit
+        dispatch(fetchReddit()); // Replace 'javascript' with any subreddit
     }, [dispatch]);
 
     if (loading) return <div>Loading...</div>;
