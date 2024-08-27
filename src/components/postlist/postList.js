@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import styles from './postList.module.css';
 
 const PostsList = () => {
   const { posts, status, error } = useSelector((state) => state.reddit);
@@ -13,7 +14,7 @@ const PostsList = () => {
   }
 
   return (
-    <div>
+    <div className={styles.posts}>
       <h2>Posts</h2>
       <ul>
         {posts.map((post) => (
