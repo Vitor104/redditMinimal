@@ -1,7 +1,7 @@
 import styles from './home.module.css';
 import Nav from '../nav/nav';
 import Topics from '../topics/topics';
-import RedditList from '../redditList/redditList';
+import PostsList from '../postlist/postList';
 
 
 function Home () {
@@ -11,7 +11,7 @@ function Home () {
         <div className={styles.homeContainer}>
             <Nav />
             <Topics />
-            <RedditList />
+            <PostsList />
         </div>  
     )
 }
