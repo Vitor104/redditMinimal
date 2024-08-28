@@ -7,4 +7,6 @@
 .posts {
     position: relative;
     top: 10em;
+    width: 50%;
+    margin: 0 auto;
 }
